@@ -176,7 +176,7 @@ export default function Projects() {
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
                 img={proj1}
                 link="https://aragua.org/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/etharagua"
+                github="https://github.com/ethereumaragua"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -185,7 +185,7 @@ export default function Projects() {
                 title="NFT collection Website"
                 img={proj2}
                 link="https://aragua.org/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/etharagua"
+                github="https://github.com/ethereumaragua"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -194,7 +194,7 @@ export default function Projects() {
                 title="Fashion Studio Website"
                 img={proj3}
                 link="https://aragua.org/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/etharagua"
+                github="https://github.com/ethereumaragua"
               />
             </div>
             <div className="col-span-12">
@@ -204,7 +204,7 @@ export default function Projects() {
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
                 img={proj4}
                 link="https://aragua.org/videos/build-stunning-portfolio-website-react-js-framer-motion"
-                github="https://github.com/etharagua"
+                github="https://github.com/ethereumaragua"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -213,7 +213,7 @@ export default function Projects() {
                 img={proj5}
                 title="Agency Website Template"
                 link="https://aragua.org/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/etharagua"
+                github="https://github.com/ethereumaragua"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -222,7 +222,7 @@ export default function Projects() {
                 img={proj6}
                 title="ETHAragua"
                 link="https://aragua.org"
-                github="https://github.com/etharagua"
+                github="https://github.com/ethereumaragua"
               />
             </div>
           </div>

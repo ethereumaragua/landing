@@ -110,7 +110,7 @@ const Navbar = () => {
         <motion.a
           target={"_blank"}
           className="w-6 mx-3"
-          href="https://github.com/etharagua"
+          href="https://github.com/ethereumaragua"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           aria-label="Mi perfil de github"
@@ -205,7 +205,7 @@ const Navbar = () => {
         <motion.a
           target={"_blank"}
           className="w-6 m-1 mx-3 rounded-full bg-light dark:bg-dark sm:mx-1"
-          href="https://github.com/etharagua"
+          href="https://github.com/ethereumaragua"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           aria-label="Mi perfil de github"
