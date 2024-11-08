@@ -69,6 +69,15 @@ const Experience = () => {
               address="Aragua, Venezuela"
               work="Creación de la organización, con la misión de educar e inspirar a la comunidad de Aragua buscando promover la adopción y el desarrollo de soluciones que puedan mejorar nuestras vidas y la economía local."
             />
+            
+            <Details
+              position="Hackathon Academica Ethereum, Participación"
+              company="EducatETH & ETHKipu"
+              companyLink="https://hackaton-academica-ethereum.devpost.com/"
+              time="2024"
+              address="Online."
+              work="Participación en la Hackaton Académica de Ethereum organizada por EducatETH y ETHKipu, con el propósito de solucionar problemas reales orientados a: Impacto Social, Gobernanza, DeFi y RWA."
+            />
 
             <Details
               position="Laboratorio Blockchain"
@@ -78,17 +87,8 @@ const Experience = () => {
               address="La Victoria, Aragua."
               work="Creación del Laboratorio Blockchain de la Universidad Politécnica Territorial del estado Aragua, con la misión de brindar a la comunidad de Aragua una plataforma de aprendizaje, desarrollo e investigación en el marco del uso de esta tecnología."
             />
-            
-            {/* <Details
-              position="Software Developer"
-              company="Amazon"
-              companyLink="https://amazon.com"
-              time="2020-2021"
-              address="Seattle, WA."
-              work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such as product recommendations and user reviews, and optimizing the app's performance and reliability."
-            />
 
-            <Details
+            {/* <Details
               position="Software Developer Intern"
               company="Microsoft"
               companyLink="https://microsoft.com"
