@@ -69,13 +69,22 @@ const Experience = () => {
               address="Aragua, Venezuela"
               work="Creación de la organización, con la misión de educar e inspirar a la comunidad de Aragua buscando promover la adopción y el desarrollo de soluciones que puedan mejorar nuestras vidas y la economía local."
             />
+
+            <Details
+              position="Ethereum Developer Pack"
+              company="ETHKipu"
+              companyLink="https://ethkipu.org"
+              time="2024 - Presente"
+              address="UPT Aragua"
+              work="De la mano de ETH Kipu, se llevó a cabo la primera cohorte del Ethereum Developer Pack a estudiantes y profesores de la UPT Aragua. Donde se brindaron 5 módulos de aprendizaje y desarrollo. Actualmente se imparten conceptos de este programa a estudiantes de Postgrado en Informática de la institución"
+            />
             
             <Details
-              position="Hackathon Academica Ethereum, Participación"
+              position="Hackathon Academica Ethereum"
               company="EducatETH & ETHKipu"
               companyLink="https://hackaton-academica-ethereum.devpost.com/"
               time="2024"
-              address="Online."
+              address="Online"
               work="Participación en la Hackaton Académica de Ethereum organizada por EducatETH y ETHKipu, con el propósito de solucionar problemas reales orientados a: Impacto Social, Gobernanza, DeFi y RWA."
             />
 
@@ -84,23 +93,13 @@ const Experience = () => {
               company="UPTAragua"
               companyLink="https://twitter.com/UPTAragua"
               time="2024 - 2025"
-              address="La Victoria, Aragua."
+              address="La Victoria, Aragua"
               work="Creación del Laboratorio Blockchain de la Universidad Politécnica Territorial del estado Aragua, con la misión de brindar a la comunidad de Aragua una plataforma de aprendizaje, desarrollo e investigación en el marco del uso de esta tecnología."
             />
 
-            {/* <Details
-              position="Software Developer Intern"
-              company="Microsoft"
-              companyLink="https://microsoft.com"
-              time="Summer 2019"
-              address="Redmond, WA."
-              work="Worked on a team responsible for developing new features for
-              Microsoft's Windows operating system, including implementing a new
-              user interface for a system settings panel and optimizing the
-              performance of a core system component."
-            />
+            
 
-            <Details
+            {/* <Details
               position="Teaching Assistant"
               company="MIT"
               companyLink="https://mit.edu"

@@ -1,23 +1,22 @@
 import { motion } from "framer-motion";
 import React, { useRef } from "react";
 
-
 const Skill = ({ name, x, y }) => {
   const ref = useRef(null);
   return (
-    <motion.div
-      ref={ref}
-      whileHover={{scale:1.05}}
-      initial={{ x: 0, y: 0 }}
-      whileInView={{ x: x, y: y, transition: {duration: 1.5} }}
-      viewport={{ once: true }}
-      className="cursor-pointer w-max origin-center absolute 
-       font-semibold bg-dark text-light py-3 px-6 rounded-full dark:bg-light dark:text-dark
-       lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3  xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold
-       "
-    >
-      {name}
-    </motion.div>
+      <motion.div
+        ref={ref}
+        whileHover={{scale:1.05}}
+        initial={{ x: 0, y: 0 }}
+        whileInView={{ x: x, y: y, transition: {duration: 1.5} }}
+        viewport={{ once: true }}
+        className="w-max cursor-default origin-center absolute 
+        font-semibold bg-dark text-light py-3 px-6 rounded-full dark:bg-light dark:text-dark
+        lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3  xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold
+        "
+      >
+        {name}
+      </motion.div>
   );
 };
 
@@ -37,22 +36,22 @@ const Skills = () => {
       "
     >
    
-        <motion.div whileHover={{scale:1.05}} className="flex p-8 font-semibold rounded-full cursor-pointer bg-dark text-light shadow-dark dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:text-xs xs:p-2 ">
+        <motion.div whileHover={{scale:1.05}} className="flex p-8 font-semibold rounded-full cursor-default bg-dark text-light shadow-dark dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:text-xs xs:p-2 ">
         Solidity
       </motion.div>
 
-        <Skill name="Hacking" x="-20vw" y="2vw" />
-        <Skill name="Hardhat" x="-5vw" y="-10vw" />
-        <Skill name="Staking" x="20vw" y="6vw" />
-        <Skill name="ReactJS" x="0vw" y="12vw" />
-        <Skill name="Frameworks" x="-20vw" y="-15vw" />
-        <Skill name="Testing" x="15vw" y="-12vw" />
-        <Skill name="NextJS" x="-35vw" y="-5vw" />
-        <Skill name="Web Design" x="32vw" y="-5vw" />
-        <Skill name="Smart Contracts" x="0vw" y="-20vw" />
-        <Skill name="Auditoría y Seguridad" x="-25vw" y="18vw" />
-        <Skill name="Correr Nodos" x="1vw" y="21vw" />
-        <Skill name="Tailwind CSS" x="28vw" y="18vw" />
+        <Skill name="Hacking" x="-20vw" y="2vw"/>
+        <Skill name="Hardhat" x="-5vw" y="-10vw"/>
+        <Skill name="Staking" x="20vw" y="6vw"/>
+        <Skill name="ReactJS" x="0vw" y="12vw"/>
+        <Skill name="Frameworks" x="-20vw" y="-15vw"/>
+        <Skill name="Testing" x="15vw" y="-12vw"/>
+        <Skill name="NextJS" x="-35vw" y="-5vw"/>
+        <Skill name="Web Design" x="32vw" y="-5vw"/>
+        <Skill name="Smart Contracts" x="0vw" y="-20vw"/>
+        <Skill name="Auditoría y Seguridad" x="-25vw" y="18vw"/>
+        <Skill name="Correr Nodos" x="1vw" y="21vw"/>
+        <Skill name="Tailwind CSS" x="28vw" y="18vw"/>
     </div></>
   );
 };

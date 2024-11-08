@@ -64,7 +64,7 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href="mailto:etharagua@gmail.com"
+                  href="mailto:eth@aragua.org"
                   className="ml-4 text-lg font-medium underline capitalize text-dark dark:text-light md:text-base"
                 >
                   Contacto
