@@ -78,6 +78,15 @@ const Experience = () => {
               address="UPT Aragua"
               work="De la mano de ETH Kipu, se llevó a cabo la primera cohorte del Ethereum Developer Pack a estudiantes y profesores de la UPT Aragua. Donde se brindaron 5 módulos de aprendizaje y desarrollo. Actualmente se imparten conceptos de este programa a estudiantes de Postgrado en Informática de la institución"
             />
+
+            <Details
+              position="Airdrop Scroll"
+              company="Scroll"
+              companyLink="https://scroll.io/"
+              time="2024"
+              address="UPT Aragua"
+              work="Airdrop otorgado por la comunidad de Scroll para la comunidad de ETH Aragua con el propósito de participar de la gobernanza de su protocolo como organización."
+            />
             
             <Details
               position="Hackathon Academica Ethereum"
