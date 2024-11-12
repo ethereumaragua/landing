@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profile from "../../public/images/profile/img1.jpg";
-import ethimg from "../../public/images/profile/ethimg.jpg";
+// import ethimg from "../../public/images/profile/ethimg.jpg";
 // import { useInView, useMotionValue, useSpring } from "framer-motion";
 // import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
@@ -95,7 +95,7 @@ export default function About() {
                 priority
               />
             </div>
-            <div className="flex flex-col items-start justify-start col-span-4 xl:col-span-4 md:order-2 md:col-span-8">
+            {/*<div className="flex flex-col items-start justify-start col-span-4 xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 ¿Qué es Ethereum?
               </h2>
@@ -106,7 +106,7 @@ export default function About() {
                 <br/><br/>
                 Cuenta con una gran comunidad de desarrolladores y usuarios y es usada en la contrucción de aplicaciones, servicios financieros y juegos.
               </p>
-            </div>
+            </div>*/}
             {/* <div className="flex flex-col items-end justify-between col-span-2 xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl">
