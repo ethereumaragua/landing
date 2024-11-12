@@ -19,13 +19,13 @@ const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
 
   return (
-    <Link href={href} className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}>
+    <Link href={href} className={`${className}  rounded relative group xl:text-light xl:dark:text-dark`}>
       {title}
       <span
         className={`
               inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
               group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
+              ${router.asPath === href ? "w-full" : " w-0"} xl:bg-light xl:dark:bg-dark
               `}
       >
         &nbsp;
@@ -43,13 +43,13 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   }
 
   return (
-    <button className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`} onClick={handleClick}>
+    <button className={`${className}  rounded relative group xl:text-light xl:dark:text-dark`} onClick={handleClick}>
       {title}
       <span
         className={`
               inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
               group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
+              ${router.asPath === href ? "w-full" : " w-0"} xl:bg-light xl:dark:bg-dark
               `}
       >
         &nbsp;
@@ -71,11 +71,11 @@ const Navbar = () => {
 
 
   return (
-    <header className="relative z-10 flex items-center justify-between w-full px-32 py-8 font-medium dark:text-light lg:px-16 z-1 md:px-12 sm:px-8 ">
+    <header className="relative z-10 flex items-center justify-between w-full px-32 py-8 font-medium dark:text-light xl:px-16 z-1 md:px-12 sm:px-8 ">
       
       <button
         type="button"
-        className="flex-col items-center justify-center hidden lg:flex"
+        className="flex-col items-center justify-center hidden xl:flex"
         aria-controls="mobile-menu"
         aria-expanded={isOpen}
         onClick={handleClick}
@@ -86,16 +86,17 @@ const Navbar = () => {
         <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
       </button>
 
-      <div className="flex items-center justify-between w-full lg:hidden"
+      <div className="flex items-center justify-between w-full xl:hidden"
       >
       <nav className="flex items-center justify-center">
-        <CustomLink className="mr-4" href="/" title="Inicio" />
-        <CustomLink className="mx-4" href="/about" title="Acerca de" />
-        <CustomLink className="mx-4" href="/projects" title="Proyectos" />
-        <CustomLink className="ml-4" href="/articles" title="Artículos" />
+        <CustomLink className="mr-3" href="/" title="Inicio" />
+        <CustomLink className="mx-3" href="/acerca-de" title="Acerca de" />
+        <CustomLink className="mx-3" href="/proyectos" title="Proyectos" />
+        <CustomLink className="mx-3" href="/articulos" title="Artículos" />
+        <CustomLink className="ml-3" href="/eventos" title="Eventos" />
       </nav>
       <nav
-        className="flex flex-wrap items-center justify-center lg:mt-2 "
+        className="flex flex-wrap items-center justify-center xl:mt-2 "
       >
         <motion.a
           target={"_blank"}
@@ -184,10 +185,11 @@ const Navbar = () => {
       animate={{scale:1,opacity:1}}
       >
       <nav className="flex flex-col items-center justify-center">
-        <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Inicio" />
-        <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="Acerca de" />
-        <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Proyectos" />
-        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Artículos" />
+        <CustomMobileLink toggle={handleClick} className="mr-4 xl:m-0 xl:my-2" href="/" title="Inicio" />
+        <CustomMobileLink toggle={handleClick} className="mx-4 xl:m-0 xl:my-2" href="/acerca-de" title="Acerca de" />
+        <CustomMobileLink toggle={handleClick} className="mx-4 xl:m-0 xl:my-2" href="/proyectos" title="Proyectos" />
+        <CustomMobileLink toggle={handleClick} className="mx-4 xl:m-0 xl:my-2" href="/articulos" title="Artículos" />
+        <CustomMobileLink toggle={handleClick} className="ml-4 xl:m-0 xl:my-2" href="/eventos" title="Eventos" />
       </nav>
       <nav
         className="flex items-center justify-center mt-2 "

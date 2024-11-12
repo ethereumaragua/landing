@@ -62,7 +62,7 @@ const Experience = () => {
           />
           <ul className="flex flex-col items-start justify-between w-full ml-4 xs:ml-2">
             <Details
-              position="Fundación ETH Aragua"
+              position="Fundación"
               company="ETHAragua"
               companyLink="https://aragua.org"
               time="2024"
@@ -76,11 +76,11 @@ const Experience = () => {
               companyLink="https://ethkipu.org"
               time="2024 - Presente"
               address="UPT Aragua"
-              work="De la mano de ETH Kipu, se llevó a cabo la primera cohorte del Ethereum Developer Pack a estudiantes y profesores de la UPT Aragua. Donde se brindaron 5 módulos de aprendizaje y desarrollo. Actualmente se imparten conceptos de este programa a estudiantes de Postgrado en Informática de la institución"
+              work="De la mano de ETH Kipu, se llevó a cabo la primera cohorte del Ethereum Developer Pack a estudiantes y profesores de la UPT Aragua. Donde se brindaron 5 módulos de aprendizaje y desarrollo. Actualmente en partnership con ETHKipu se imparte contenido de este programa a estudiantes del Postgrado en Informática de la institución."
             />
 
             <Details
-              position="Airdrop Scroll"
+              position="Airdrop"
               company="Scroll"
               companyLink="https://scroll.io/"
               time="2024"

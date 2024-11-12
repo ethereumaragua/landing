@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import proj1 from "../../public/images/projects/faucet.jpg";
 import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
 import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
 import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
@@ -39,8 +39,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+              (max-width: 1200px) 90vw,
+              80vw"
           priority
         />
       </Link>
@@ -75,7 +75,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             className="p-2 px-6 ml-4 text-lg font-semibold rounded-lg bg-dark text-light dark:bg-light dark:text-dark sm:px-4 sm:text-base "
             aria-label="Crypto Screener Application"
           >
-            Visit Project
+            Visitar Proyecto
           </Link>
         </div>
       </div>
@@ -171,15 +171,15 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                type="Proyecto Destacado"
+                title="Faucet Multichain"
+                summary="Un faucet de redes de prueba es un servicio que te proporciona pequeñas cantidades de criptomonedas de forma gratuita. Estas criptomonedas no tienen valor real, pero te permiten experimentar con la tecnología y familiarizarte con el funcionamiento de una blockchain."
                 img={proj1}
-                link="https://aragua.org/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/ethereumaragua"
+                link="https://faucet.ethkipu.org"
+                github="https://github.com/ethereumaragua/faucet"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website Template"
                 title="NFT collection Website"
@@ -224,7 +224,7 @@ export default function Projects() {
                 link="https://aragua.org"
                 github="https://github.com/ethereumaragua"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
