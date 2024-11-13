@@ -65,7 +65,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             href={github}
             target={"_blank"}
             className="w-10"
-            aria-label="Crypto Screener Application github link"
+            aria-label="Faucet Multichain github link"
           >
             <GithubIcon />
           </Link>
@@ -73,7 +73,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             href={link}
             target={"_blank"}
             className="p-2 px-6 ml-4 text-lg font-semibold rounded-lg bg-dark text-light dark:bg-light dark:text-dark sm:px-4 sm:text-base "
-            aria-label="Crypto Screener Application"
+            aria-label="Faucet Multichain"
           >
             Visitar Proyecto
           </Link>
