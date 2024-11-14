@@ -2,14 +2,14 @@ import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import blog1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
-import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import blog5 from "../../public/images/articles/create modal component in react using react portals.png";
-import blog6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
-import blog7 from "../../public/images/articles/What is Redux with easy explanation.png";
-import blog8 from "../../public/images/articles/What is higher order component in React.jpg";
+import blog1 from "../../public/images/articles/ethuniversity.jpg";
+// import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
+// import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
+// import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
+// import blog5 from "../../public/images/articles/create modal component in react using react portals.png";
+// import blog6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
+// import blog7 from "../../public/images/articles/What is Redux with easy explanation.png";
+// import blog8 from "../../public/images/articles/What is higher order component in React.jpg";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -135,18 +135,18 @@ export default function Articles() {
             className="!text-8xl !leading-tight mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
-          <center>en desarrollo</center>
+          {/* <center>en desarrollo</center> */}
 
-          {/* <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
+          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               img={blog1}
-              title="build a custom pagination component in reactjs from scratch"
-              time="9 min read"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this 
-              step-by-step guide to integrate Pagination component in your ReactJS project."
-              link="https://aragua.org"
+              title="Construyendo ETH Aragua: En pro de una mejor comunidad local y universitaria"
+              time="6 min de lectura"
+              summary="Promoviendo la colaboración, el desarrollo y la descentralización a través de la Máquina Virtual de Ethereum en proyectos académicos y locales."
+              link="https://blog.aragua.org/blogs/construyendo-eth-aragua-en-pro-de-una-mejor-comunidad-local-y-universitaria"
             />
-
+          </ul>
+{/* 
             <FeaturedArticle
               img={blog2}
               title="creating stunning loading screens in react: Build 3 types of loading screens"

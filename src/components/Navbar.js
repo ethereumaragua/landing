@@ -89,11 +89,23 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full xl:hidden"
       >
       <nav className="flex items-center justify-center">
-        <CustomLink className="mr-3" href="/" title="Inicio" />
-        <CustomLink className="mx-3" href="/acerca-de" title="Acerca de" />
-        <CustomLink className="mx-3" href="/proyectos" title="Proyectos" />
-        <CustomLink className="mx-3" href="/articulos" title="Artículos" />
-        <CustomLink className="ml-3" href="/eventos" title="Eventos" />
+        {/* <CustomLink className="mr-2" href="/" title="Inicio" /> */}
+        <CustomLink className="mx-2" href="/acerca-de" title="Acerca de" />
+        <CustomLink className="mx-2" href="/proyectos" title="Proyectos" />
+        <CustomLink className="mx-2" href="/articulos" title="Artículos" />
+        <CustomLink className="mx-2" href="/eventos" title="Eventos" />
+        <Link href={"https://blog.aragua.org"} className={`ml-2 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+        {"Blog"}
+          <span
+            className={`
+                  inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                  group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                  w-0 xl:bg-light xl:dark:bg-dark
+                  `}
+          >
+            &nbsp;
+          </span>
+        </Link>
       </nav>
       <nav
         className="flex flex-wrap items-center justify-center xl:mt-2 "
