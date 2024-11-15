@@ -14,7 +14,7 @@ const Skill = ({ name, x, y, info }) => {
         initial={{ x: 0, y: 0 }}
         whileInView={{ x: x, y: y, transition: {duration: 1.5} }}
         viewport={{ once: true }}
-        className="w-max cursor-default origin-center absolute 
+        className="w-max cursor-pointer origin-center absolute 
         font-semibold bg-dark text-light py-3 px-6 rounded-full dark:bg-light dark:text-dark
         lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3"
         data-tooltip-id={name}
@@ -24,7 +24,7 @@ const Skill = ({ name, x, y, info }) => {
       >
         {name}
       </motion.div>
-      <Tooltip id={name} style={{ zIndex: 100, maxWidth: "250px" }} className="dark:text-dark dark:bg-light" />
+      <Tooltip id={name} style={{ zIndex: 100, maxWidth: "250px" }} className="dark:text-dark dark:bg-light" openOnClick/>
     </>
   );
 };
@@ -66,7 +66,7 @@ const Skills = () => {
         "
       >
     
-        <motion.div whileHover={{scale:1.05}} className="flex font-semibold rounded-full cursor-default bg-dark text-light shadow-dark dark:bg-light dark:text-dark
+        <motion.div whileHover={{scale:1.05}} className="flex font-semibold rounded-full cursor-pointer bg-dark text-light shadow-dark dark:bg-light dark:text-dark
         py-3 px-6 lg:py-2 lg:px-4 sm:text-md text-xl md:py-1.5 md:px-3"
         data-tooltip-id={"solidity"}
         data-tooltip-content={`Un lenguaje de programación de alto nivel diseñado específicamente para crear contratos inteligentes en Ethereum.`}
@@ -74,7 +74,7 @@ const Skills = () => {
         data-tooltip-position-strategy="fixed">
           Solidity
         </motion.div>
-        <Tooltip id="solidity" style={{ zIndex: 100, maxWidth: "250px" }} className="dark:text-dark dark:bg-light" />
+        <Tooltip id="solidity" style={{ zIndex: 100, maxWidth: "250px" }} className="dark:text-dark dark:bg-light" openOnClick/>
 
           <Skill name="Hacking" x="-24vw" y={`${windowSize < 560 ? "4vw" : "2vw"}`} info={`Aprende sobre seguridad de contratos inteligentes. Practicando ataques y defensa de contratos en un entorno seguro y controlado.`}/>
           <Skill name="Hardhat" x="-5vw" y={`${windowSize < 560 ? "-11vw" : "-10vw"}`} info={`Un entorno de desarrollo para Solidity que facilita la escritura, compilación, despliegue y pruebas de contratos inteligentes. Ofrece una experiencia de desarrollo similar a las herramientas tradicionales de desarrollo de software.`}/>
