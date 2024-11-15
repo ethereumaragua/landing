@@ -202,6 +202,18 @@ const Navbar = () => {
         <CustomMobileLink toggle={handleClick} className="mx-4 xl:m-0 xl:my-2" href="/proyectos" title="Proyectos" />
         <CustomMobileLink toggle={handleClick} className="mx-4 xl:m-0 xl:my-2" href="/articulos" title="Artículos" />
         <CustomMobileLink toggle={handleClick} className="ml-4 xl:m-0 xl:my-2" href="/eventos" title="Eventos" />
+        <a href="https://blog.aragua.org/" className="relative ml-4 rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
+          Blog
+          <span
+            className={`
+                  inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                  group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                  w-0 xl:bg-light xl:dark:bg-dark
+                  `}
+          >
+            &nbsp;
+          </span>
+        </a>
       </nav>
       <nav
         className="flex items-center justify-center mt-2 "
