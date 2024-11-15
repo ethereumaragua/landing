@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { set } from "mongoose";
 import React, { useRef, useState, useEffect } from "react";
 import { Tooltip } from "react-tooltip";
 
