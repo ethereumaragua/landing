@@ -2,6 +2,8 @@ import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
+
+
 // import blog1 from "../../public/images/articles/pagination component in reactjs.jpg";
 // import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
 // import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
@@ -135,7 +137,17 @@ export default function Events() {
             className="!text-8xl !leading-tight mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
-          <center>en planificación</center>
+          <center className="w-full">
+          <iframe
+              src={"https://calendar.google.com/calendar/embed?wkst=2&ctz=America%2FCaracas&showPrint=0&showTz=0&showTabs=0&title=Eventos%20ETH%20Aragua&src=ZXRoYXJhZ3VhQGdtYWlsLmNvbQ&color=%23039BE5&mode=AGENDA"}
+              className="w-full rounded-lg min-h-[330px]"
+            ></iframe>
+            <br /><br />
+          <iframe
+              src={"https://calendar.google.com/calendar/embed?wkst=2&ctz=America%2FCaracas&showPrint=0&showTz=0&showTabs=0&title=Eventos%20ETH%20Aragua&src=ZXRoYXJhZ3VhQGdtYWlsLmNvbQ&color=%23039BE5"}
+              className="w-full rounded-lg min-h-[470px]"
+            ></iframe>
+          </center>
 
           {/* <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle

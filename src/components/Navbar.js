@@ -3,13 +3,8 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
-  DribbbleIcon,
-  GithubIcon,
-  LinkedInIcon,
   MoonIcon,
-  PinterestIcon,
-  SunIcon,
-  TwitterIcon
+  SunIcon
 } from "./Icons";
 import { FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -58,8 +53,6 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   );
 };
 
-
-
 const Navbar = () => {
   const [mode, setMode] = useThemeSwitch();
     const [isOpen, setIsOpen] = useState(false);
@@ -67,8 +60,6 @@ const Navbar = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-
-
 
   return (
     <header className="relative z-10 flex items-center justify-between w-full px-32 py-8 font-medium dark:text-light xl:px-16 z-1 md:px-12 sm:px-8 ">
@@ -86,105 +77,84 @@ const Navbar = () => {
         <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
       </button>
 
-      <div className="flex items-center justify-between w-full xl:hidden"
+      <div className="flex items-center w-full xl:hidden"
       >
-      <nav className="flex items-center justify-center">
-        {/* <CustomLink className="mr-2" href="/" title="Inicio" /> */}
-        <CustomLink className="mx-2" href="/acerca-de" title="Acerca de" />
-        <CustomLink className="mx-2" href="/proyectos" title="Proyectos" />
-        <CustomLink className="mx-2" href="/articulos" title="Artículos" />
-        <CustomLink className="mx-2" href="/eventos" title="Eventos" />
-        <Link href={"https://blog.aragua.org"} className={`ml-2 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
-        {"Blog"}
-          <span
-            className={`
-                  inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
-                  group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-                  w-0 xl:bg-light xl:dark:bg-dark
-                  `}
-          >
-            &nbsp;
-          </span>
-        </Link>
-      </nav>
-      <nav
-        className="flex flex-wrap items-center justify-center xl:mt-2 "
-      >
-        <motion.a
-          target={"_blank"}
-          className="w-6 mr-1"
-          href="https://twitter.com/etharagua"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de twitter"
-        >
-          <FaTwitter color="#55ACEE" size={"1.6em"}/>
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 mx-3"
-          href="https://github.com/ethereumaragua"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de github"
-        >
-          <FaGithub size={"1.6em"}/>
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mr-3 sm:mx-1"
-          href="https://t.me/etharagua"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de telegram"
-        >
-          <FaTelegram color="#55ACEE" size={"1.6em"} className="bg-white rounded-full "/>
-        </motion.a>
-        {/* <motion.a
-          target={"_blank"}
-          className="w-6 mx-3"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de linkedin"
-        >
-          <LinkedInIcon />
-        </motion.a> */}
-        {/* <motion.a
-          target={"_blank"}
-          className="w-6 mx-3 rounded-full bg-light"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de pinterest"
-        >
-          <PinterestIcon />
-        </motion.a> */}
-        {/* <motion.a
-          target={"_blank"}
-          className="w-6 mx-3"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de dribbble"
-        >
-          <DribbbleIcon />
-        </motion.a> */}
+        <nav className="flex items-center justify-center w-full">
+          <div className="flex justify-end w-1/2 mr-12">
+            <CustomLink className="mr-6" href="/" title="Inicio" />
+            <CustomLink className="mx-6" href="/acerca-de" title="Acerca de" />
+            <CustomLink className="mx-6" href="/proyectos" title="Proyectos" />
+            <CustomLink className="mx-6" href="/articulos" title="Artículos" />
+          </div>
+          <div className="flex justify-start w-1/2 ml-12">
+            <div className="flex justify-between w-full">
+              <div className="flex items-center">
+              <CustomLink className="mx-6" href="/eventos" title="Eventos" />
+              <Link href={"https://blog.aragua.org"} className={`ml-2 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+              {"Blog"}
+                <span
+                  className={`
+                        inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                        group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                        w-0 xl:bg-light xl:dark:bg-dark
+                        `}
+                >
+                  &nbsp;
+                </span>
+              </Link>
+              </div>
+              <nav
+                className="flex items-center justify-center xl:mt-2"
+              >
+                <motion.a
+                  target={"_blank"}
+                  className="w-6 mr-1"
+                  href="https://twitter.com/etharagua"
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.9 }}
+                  aria-label="Mi perfil de twitter"
+                >
+                  <FaTwitter color="#55ACEE" size={"1.6em"}/>
+                </motion.a>
+                <motion.a
+                  target={"_blank"}
+                  className="w-6 mx-3"
+                  href="https://github.com/ethereumaragua"
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.9 }}
+                  aria-label="Mi perfil de github"
+                >
+                  <FaGithub size={"1.6em"}/>
+                </motion.a>
+                <motion.a
+                  target={"_blank"}
+                  className="w-6 m-1 mr-3 sm:mx-1"
+                  href="https://t.me/etharagua"
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.9 }}
+                  aria-label="Mi perfil de telegram"
+                >
+                  <FaTelegram color="#55ACEE" size={"1.6em"} className="bg-white rounded-full "/>
+                </motion.a>
 
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`w-6 h-6 ease ml-6 flex items-center justify-center rounded-full p-1  
-            ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
-            `}
-          aria-label="theme-switcher"
-        >
-          {mode === "light" ? (
-            <SunIcon className={"fill-dark"} />
-          ) : (
-            <MoonIcon className={"fill-dark"} />
-          )}
-        </button>
-      </nav>
+                <button
+                  onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                  className={`w-6 h-6 ease ml-6 flex items-center justify-center rounded-full p-1  
+                    ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
+                    `}
+                  aria-label="theme-switcher"
+                >
+                  {mode === "light" ? (
+                    <SunIcon className={"fill-dark"} />
+                  ) : (
+                    <MoonIcon className={"fill-dark"} />
+                  )}
+                </button>
+              </nav>
+            </div>
+          </div>
+        </nav>
+        
       </div>
     {
       isOpen ? 
@@ -197,10 +167,10 @@ const Navbar = () => {
       animate={{scale:1,opacity:1}}
       >
       <nav className="flex flex-col items-center justify-center">
-        <CustomMobileLink toggle={handleClick} className="mr-4 xl:m-0 xl:my-2" href="/" title="Inicio" />
-        <CustomMobileLink toggle={handleClick} className="mx-4 xl:m-0 xl:my-2" href="/acerca-de" title="Acerca de" />
-        <CustomMobileLink toggle={handleClick} className="mx-4 xl:m-0 xl:my-2" href="/proyectos" title="Proyectos" />
-        <CustomMobileLink toggle={handleClick} className="mx-4 xl:m-0 xl:my-2" href="/articulos" title="Artículos" />
+        <CustomMobileLink toggle={handleClick} className="mr-6 xl:m-0 xl:my-2" href="/" title="Inicio" />
+        <CustomMobileLink toggle={handleClick} className="mx-6 xl:m-0 xl:my-2" href="/acerca-de" title="Acerca de" />
+        <CustomMobileLink toggle={handleClick} className="mx-6 xl:m-0 xl:my-2" href="/proyectos" title="Proyectos" />
+        <CustomMobileLink toggle={handleClick} className="mx-6 xl:m-0 xl:my-2" href="/articulos" title="Artículos" />
         <CustomMobileLink toggle={handleClick} className="ml-4 xl:m-0 xl:my-2" href="/eventos" title="Eventos" />
         <a href="https://blog.aragua.org/" className="relative ml-4 rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
           Blog
@@ -248,36 +218,6 @@ const Navbar = () => {
         >
           <FaTelegram color="#55ACEE" size={"1.6em"} className="bg-white rounded-full"/>
         </motion.a>
-        {/* <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de linkedin"
-        >
-          <LinkedInIcon />
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 rounded-full bg-light sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de pinterest"
-        >
-          <PinterestIcon />
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Mi perfil de dribbble"
-        >
-          <DribbbleIcon />
-        </motion.a> */}
 
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
