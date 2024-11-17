@@ -3,7 +3,7 @@ import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import blog1 from "../../public/images/articles/ethuniversity.jpg";
-// import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
+import blog2 from "../../public/images/articles/bulevar.jpg";
 // import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 // import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
 // import blog5 from "../../public/images/articles/create modal component in react using react portals.png";
@@ -145,19 +145,16 @@ export default function Articles() {
               summary="Promoviendo la colaboración, el desarrollo y la descentralización a través de la Máquina Virtual de Ethereum en proyectos académicos y locales."
               link="https://blog.aragua.org/blogs/construyendo-eth-aragua-en-pro-de-una-mejor-comunidad-local-y-universitaria"
             />
-          </ul>
-{/* 
+
             <FeaturedArticle
               img={blog2}
-              title="creating stunning loading screens in react: Build 3 types of loading screens"
-              time="10 min read"
-              summary="Learn how to create stunning loading screens in React with 3 different methods. 
-              Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the 
-              user experience."
-              link="https://aragua.org"
+              title="El tema de las Criptomonedas en Venezuela: Una necesidad, una puerta al futuro, o ambas"
+              time="5 min de lectura"
+              summary="Un vistazo de las distintas opciones financieras que han emergido tras los problemas económicos y el papel de los exchanges."
+              link="https://blog.aragua.org/blogs/el-tema-de-las-criptomonedas-en-venezuela"
             />
           </ul>
-
+{/* 
           <h2 className="w-full my-16 mt-32 text-4xl font-bold text-center">
             Todos los Artículos
           </h2>
