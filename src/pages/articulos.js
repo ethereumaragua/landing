@@ -87,7 +87,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
     <li className="relative w-full col-span-1 p-4 border border-solid bg-light border-dark rounded-2xl dark:bg-dark dark:border-light">
       <div
         className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark 
-        -z-10  "
+        -z-10  dark:bg-light"
       />
       <Link
         href={link}
