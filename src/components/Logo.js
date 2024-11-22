@@ -15,14 +15,15 @@ const Logo = () => {
      className='flex flex-col items-center justify-center mt-2'>
         <MotionLink href="https://ethereum.org/" target='_blank' 
     className='flex items-center justify-center w-16 h-16 text-2xl font-bold text-white rounded-full bg-[#FE0024] dark:border-2 dark:border-solid dark:border-light'
-    whileInView={{
-      backgroundColor:["#121212",  "rgba(131,58,180,1)","rgba(253,29,29,1)","#FE0024","rgba(252,176,69,1)","rgba(131,58,180,1)","#121212"],
-      // backgroundColor:["#fefa00","#007bfe", "#FE0024", "000000", "#fefa00","#007bfe", "#FE0024", "000000"],
-      transition:{duration:3, repeat: Infinity }
-    }}
+    // whileInView={{
+    //   backgroundColor:["#121212",  "rgba(131,58,180,1)","rgba(253,29,29,1)","#FE0024","rgba(252,176,69,1)","rgba(131,58,180,1)","#121212"],
+    //   transition:{duration:3, repeat: Infinity }
+    // }}
     whileHover={{
-      backgroundColor:["#FE0024"],
-      padding:"10px",
+      // backgroundColor:["#FE0024"],
+      backgroundColor:["#121212",  "rgba(131,58,180,1)","rgba(253,29,29,1)","#FE0024","rgba(252,176,69,1)","rgba(131,58,180,1)","#121212"],
+      // padding:"10px",
+      transition:{duration:1, repeat: Infinity }
     }}
     ><Image
     src={ethLogo}
