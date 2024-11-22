@@ -6,11 +6,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/faucet.jpg";
-import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
-import proj6 from "../../public/images/projects/devdreaming.jpg";
+// import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
+// import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
+// import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
+// import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
+// import proj6 from "../../public/images/projects/devdreaming.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -175,7 +175,7 @@ export default function Projects() {
                 title="Faucet Multichain"
                 summary="Un faucet de redes de prueba es un servicio que te proporciona pequeñas cantidades de criptomonedas de forma gratuita. Estas criptomonedas no tienen valor real, pero te permiten experimentar con la tecnología y familiarizarte con el funcionamiento de una blockchain."
                 img={proj1}
-                link="https://faucet.ethkipu.org"
+                link="https://faucet.aragua.org"
                 github="https://github.com/ethereumaragua/faucet"
               />
             </div>
