@@ -14,14 +14,14 @@ const Logo = () => {
     <div
      className='flex flex-col items-center justify-center mt-2'>
         <MotionLink href="https://ethereum.org/" target='_blank' 
-    className='flex items-center justify-center w-16 h-16 text-2xl font-bold text-white bg-black rounded-full dark:border-2 dark:border-solid dark:border-light'
+    className='flex items-center justify-center w-16 h-16 text-2xl font-bold text-white bg-[#FE0024] rounded-full dark:border-2 dark:border-solid dark:border-light'
     whileHover={{
-        backgroundColor:["transparent"],
-        scale:[1.2]
+        backgroundColor:["#FE0024"],
+        // scale:[1.1]
       }}
     whileTap={{
-      backgroundColor:["transparent"],
-      scale:[1.2]
+      backgroundColor:["#FE0024"],
+       scale:[0.97]
     }}
     whileInView={{
       backgroundColor:["#121212",  "rgba(131,58,180,1)","rgba(253,29,29,1)","rgba(252,176,69,1)","rgba(131,58,180,1)","#121212"],

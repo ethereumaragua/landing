@@ -5,7 +5,7 @@ import Layout from "./Layout";
 const Footer = () => {
   return (
     <footer
-      className="w-full text-lg font-medium border-t-2 border-solid border-dark dark:text-light dark:border-light sm:text-base "
+      className="w-full text-lg font-medium border-t-[1px] border-solid border-dark dark:text-light dark:border-light sm:text-base "
     >
       <Layout className="flex items-center justify-center py-8 lg:flex-col lg:py-6">
         

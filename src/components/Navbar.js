@@ -81,17 +81,29 @@ const Navbar = () => {
       >
         <nav className="flex items-center justify-center w-full">
           <div className="flex justify-end w-1/2 mr-12">
-            <CustomLink className="mr-6" href="/" title="Inicio" />
-            <CustomLink className="mx-6" href="/acerca-de" title="Acerca de" />
-            <CustomLink className="mx-6" href="/proyectos" title="Proyectos" />
-            <CustomLink className="mx-6" href="/articulos" title="Artículos" />
+            <CustomLink className="mr-4" href="/" title="Inicio" />
+            <CustomLink className="mx-4" href="/acerca-de" title="Acerca de" />
+            <CustomLink className="mx-4" href="/proyectos" title="Proyectos" />
+            <CustomLink className="mx-4" href="/articulos" title="Artículos" />
           </div>
           <div className="flex justify-start w-1/2 ml-12">
             <div className="flex justify-between w-full">
               <div className="flex items-center">
-              <CustomLink className="mx-6" href="/eventos" title="Eventos" />
-              <Link href={"https://blog.aragua.org"} className={`ml-2 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+              <CustomLink className="mx-4" href="/eventos" title="Eventos" />
+              <Link href={"https://blog.aragua.org"} className={`mx-4 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
               {"Blog"}
+                <span
+                  className={`
+                        inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                        group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                        w-0 xl:bg-light xl:dark:bg-dark
+                        `}
+                >
+                  &nbsp;
+                </span>
+              </Link>
+              <Link href={"https://faucet.aragua.org"} className={`ml-4 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+              {"Faucet"}
                 <span
                   className={`
                         inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
@@ -139,7 +151,7 @@ const Navbar = () => {
 
                 <button
                   onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                  className={`w-6 h-6 ease ml-6 flex items-center justify-center rounded-full p-1  
+                  className={`w-6 h-6 ease ml-4 flex items-center justify-center rounded-full p-1  
                     ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
                     `}
                   aria-label="theme-switcher"
@@ -167,13 +179,25 @@ const Navbar = () => {
       animate={{scale:1,opacity:1}}
       >
       <nav className="flex flex-col items-center justify-center">
-        <CustomMobileLink toggle={handleClick} className="mr-6 xl:m-0 xl:my-2" href="/" title="Inicio" />
-        <CustomMobileLink toggle={handleClick} className="mx-6 xl:m-0 xl:my-2" href="/acerca-de" title="Acerca de" />
-        <CustomMobileLink toggle={handleClick} className="mx-6 xl:m-0 xl:my-2" href="/proyectos" title="Proyectos" />
-        <CustomMobileLink toggle={handleClick} className="mx-6 xl:m-0 xl:my-2" href="/articulos" title="Artículos" />
-        <CustomMobileLink toggle={handleClick} className="ml-4 xl:m-0 xl:my-2" href="/eventos" title="Eventos" />
-        <a href="https://blog.aragua.org/" className="relative ml-4 rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
+        <CustomMobileLink toggle={handleClick} className="xl:m-0 xl:my-2" href="/" title="Inicio" />
+        <CustomMobileLink toggle={handleClick} className="xl:m-0 xl:my-2" href="/acerca-de" title="Acerca de" />
+        <CustomMobileLink toggle={handleClick} className="xl:m-0 xl:my-2" href="/proyectos" title="Proyectos" />
+        <CustomMobileLink toggle={handleClick} className="xl:m-0 xl:my-2" href="/articulos" title="Artículos" />
+        <CustomMobileLink toggle={handleClick} className="xl:m-0 xl:my-2" href="/eventos" title="Eventos" />
+        <a href="https://blog.aragua.org/" className="relative rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
           Blog
+          <span
+            className={`
+                  inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                  group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                  w-0 xl:bg-light xl:dark:bg-dark
+                  `}
+          >
+            &nbsp;
+          </span>
+        </a>
+        <a href="https://faucet.aragua.org/" className="relative rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
+          Faucet
           <span
             className={`
                   inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
@@ -221,7 +245,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`w-6 h-6 ease m-1 ml-6 sm:mx-1 flex items-center justify-center rounded-full p-1  
+          className={`w-6 h-6 ease m-1 ml-4 sm:mx-1 flex items-center justify-center rounded-full p-1  
             ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
             `}
           aria-label="theme-switcher"
