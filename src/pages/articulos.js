@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import blog1 from "../../public/images/articles/ethuniversity.jpg";
 import blog2 from "../../public/images/articles/bulevar.jpg";
-// import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
+import blog3 from "../../public/images/articles/tornado.png";
 // import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
 // import blog5 from "../../public/images/articles/create modal component in react using react portals.png";
 // import blog6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
@@ -139,11 +139,11 @@ export default function Articles() {
 
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
-              img={blog1}
-              title="Construyendo ETH Aragua: En pro de una mejor comunidad local y universitaria"
-              time="6 min de lectura"
-              summary="Promoviendo la colaboración, el desarrollo y la descentralización a través de la Máquina Virtual de Ethereum en proyectos académicos y locales."
-              link="https://blog.aragua.org/blogs/construyendo-eth-aragua-en-pro-de-una-mejor-comunidad-local-y-universitaria"
+              img={blog3}
+              title="La Privacidad como un Derecho Fundamental: El Caso Tornado Cash y las Sanciones de la OFAC"
+              time="10 min de lectura"
+              summary="El caso de Tornado Cash plantea una pregunta crucial: ¿es la privacidad un derecho fundamental o un lujo que puede ser restringido?"
+              link="https://blog.aragua.org/blogs/la-privacidad-como-un-derecho-fundamental-el-caso-tornado-cash-y-las-sanciones-de-la-ofac"
             />
 
             <FeaturedArticle
@@ -154,19 +154,19 @@ export default function Articles() {
               link="https://blog.aragua.org/blogs/el-tema-de-las-criptomonedas-en-venezuela"
             />
           </ul>
-{/* 
+
           <h2 className="w-full my-16 mt-32 text-4xl font-bold text-center">
-            Todos los Artículos
+            Otros Artículos
           </h2>
 
           <ul className="relative flex flex-col items-center">
             <Article
-              title="form validation in reactjs: build a reusable custom hook for inputs and error handling"
-              img={blog3}
-              date="Enero 27, 2023"
-              link="https://aragua.org/blogs/react-form-validation-custom-hook"
+              title="Construyendo ETH Aragua: En pro de una mejor comunidad local y universitaria"
+              img={blog1}
+              date="Noviembre 13, 2024"
+              link="https://blog.aragua.org/blogs/construyendo-eth-aragua-en-pro-de-una-mejor-comunidad-local-y-universitaria"
             />
-            <Article
+{/*         <Article
               title="silky smooth scrolling in reactjs: a step-by-step guide for react developers"
               img={blog4}
               date="Enero 30, 2023"
@@ -196,7 +196,8 @@ export default function Articles() {
               img={blog8}
               link="https://aragua.org/blogs/higher-order-component-hoc-react"
             />
-          </ul> */}
+            */}
+          </ul> 
         </Layout>
       </main>
     </>
