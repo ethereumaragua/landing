@@ -6,7 +6,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/faucet.jpg";
-// import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
+import proj2 from "../../public/images/projects/smarthire.png";
 // import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
 // import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
 // import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
@@ -60,7 +60,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         <p className="my-2 font-medium rounded-md text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
-        <div className="flex items-center mt-2">
+        <div className="flex items-center w-full mt-2 sm:justify-between justify-normal">
           <Link
             href={github}
             target={"_blank"}
@@ -83,7 +83,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, link, github, summary }) => {
 
   return (
     <article
@@ -125,19 +125,24 @@ const Project = ({ title, type, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <div className="flex items-center justify-between w-full">
+
+        <p className="my-2 font-medium rounded-md text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
+
+        <div className="flex items-center justify-between w-full mt-1">
           <Link
             href={link}
             target={"_blank"}
-            className="text-lg font-medium underline rounded md:text-base "
+            className="p-2 px-6 text-lg font-semibold rounded-lg bg-dark text-light dark:bg-light dark:text-dark sm:px-4 sm:text-base"
             aria-label={title}
           >
-            Visit
+            Visitar Proyecto
           </Link>
           <Link
             href={github}
             target={"_blank"}
-            className="w-8 md:w-6"
+            className="w-10 md:w-10"
             aria-label={title}
           >
             <GithubIcon />
@@ -171,7 +176,7 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Proyecto Destacado"
+                type="Aprendizaje, Desarrollo"
                 title="Faucet Multichain"
                 summary="Un faucet de redes de prueba es un servicio que te proporciona pequeñas cantidades de criptomonedas de forma gratuita. Estas criptomonedas no tienen valor real, pero te permiten experimentar con la tecnología y familiarizarte con el funcionamiento de una blockchain."
                 img={proj1}
@@ -179,16 +184,17 @@ export default function Projects() {
                 github="https://github.com/ethereumaragua/faucet"
               />
             </div>
-            {/* <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website Template"
-                title="NFT collection Website"
+                type="(Hackathon) DAO, Governanza"
+                title="SmartHire"
+                summary="DApp de gobernanza diseñada para DAOs, orientada a automatizar el proceso de contratación digital, la creación y asignación de bounties y la ejecución de tareas."
                 img={proj2}
-                link="https://aragua.org/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/ethereumaragua"
+                link="https://smart-hire-2.vercel.app/"
+                github="https://github.com/ethereumaragua/SmartHire"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+           {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website"
                 title="Fashion Studio Website"
