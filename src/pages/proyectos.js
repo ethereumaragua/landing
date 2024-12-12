@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/faucet.jpg";
 import proj2 from "../../public/images/projects/smarthire.png";
-// import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
+import proj3 from "../../public/images/projects/proj3.jpg";
 // import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
 // import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
 // import proj6 from "../../public/images/projects/devdreaming.jpg";
@@ -194,16 +194,17 @@ export default function Projects() {
                 github="https://github.com/ethereumaragua/SmartHire"
               />
             </div>
-           {/* <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website"
-                title="Fashion Studio Website"
+                type="(Hackathon) DeFi & RWA"
+                title="Tokenización de Activos Inmobiliarios"
+                summary="Plataforma que facilita la participación de inversionistas mediante la compra de tokens digitales que representan fracciones de inmuebles."
                 img={proj3}
-                link="https://aragua.org/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/ethereumaragua"
+                link="https://devpost.com/software/tokenizacion-de-activos-inmobiliarios"
+                github="https://github.com/garciadervin/TokenDApp"
               />
             </div>
-            <div className="col-span-12">
+            {/*<div className="col-span-12">
               <FeaturedProject
                 type="Portfolio Website"
                 title="React Portfolio Website"
