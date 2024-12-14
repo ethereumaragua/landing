@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedText from "@/components/AnimatedText";
 // import { HireMe } from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
@@ -9,8 +11,8 @@ import ethLogo from "../../public/images/logos/ethereum.png";
 import puzzle from "../../public/images/svgs/puzzle.svg";
 import TransitionEffect from "@/components/TransitionEffect";
 
-
 export default function Home() {
+
   
   return (
     <>

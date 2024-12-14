@@ -3,6 +3,8 @@ import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
+import poster from "../../public/images/events/Poster.png";
+
 
 // import blog1 from "../../public/images/articles/pagination component in reactjs.jpg";
 // import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
@@ -138,6 +140,13 @@ export default function Events() {
           />
 
           <center className="w-full">
+
+          <Image
+            className="relative w-full h-auto mb-12 rounded-lg"
+            src={poster}
+            alt="Poster"
+          />
+
           <iframe
               src={"https://calendar.google.com/calendar/embed?wkst=2&ctz=America%2FCaracas&showPrint=0&showTz=0&showTabs=0&title=Eventos%20ETH%20Aragua&src=ZXRoYXJhZ3VhQGdtYWlsLmNvbQ&color=%23039BE5&mode=AGENDA"}
               className="w-full rounded-lg min-h-[330px]"
