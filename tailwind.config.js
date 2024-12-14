@@ -24,12 +24,17 @@ module.exports = {
       animation: {
         "spin-slow": "spin 8s linear infinite",
         roll: "roll 24s linear infinite",
+        rollMobile: "rollMobile 16s linear infinite",
       },
       keyframes: {
         roll: {
-            "0%": { transform: "translateX(75%)" },
-            "100%": { transform: "translateX(-75%)" },
+            "0%": { transform: "translateX(100%)" },
+            "100%": { transform: "translateX(-140%)" },
         },
+        rollMobile: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-700%)" },
+      },
       },
       backgroundImage: {
         circularLight:

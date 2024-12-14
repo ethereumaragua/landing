@@ -11,9 +11,11 @@ import InsightRoll from "@/components/InsightRoll";
 import Link from "next/link";
 
 const insights = [
+    "🌟🚀", " ", " "," "," ",
     "Te Invitamos a Nuestro Próximo Evento, este 28 de Enero, desde las 9:00 de la mañana en la UPT Aragua",
     "Únete a nuestro Seminario Blockchain 2025 | 1er Capítulo | Onboarding",
-    "Empieza tu Recorrido en la web3 ¡No te lo pierdas! 🌟🚀",
+    "Empieza tu Recorrido en la web3 ¡No te lo pierdas!",
+    " ", " "," "," ", "🌟🚀",
 ];
 
 // If loading a variable font, you don't need to specify the font weight
