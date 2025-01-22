@@ -62,11 +62,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="relative z-10 flex items-center justify-between w-full px-32 py-8 font-medium dark:text-light xl:px-16 z-1 md:px-12 sm:px-8 ">
+    <header className="relative z-10 flex items-center justify-between w-full px-32 py-8 text-sm font-medium dark:text-light xl:px-16 z-1 md:px-12 sm:px-8 ">
       
       <button
         type="button"
-        className="flex-col items-center justify-center hidden xl:flex"
+        className={`flex-col items-center justify-center hidden z-[51] xl:flex ${isOpen ? "fixed" : ""}`}
         aria-controls="mobile-menu"
         aria-expanded={isOpen}
         onClick={handleClick}
@@ -85,11 +85,11 @@ const Navbar = () => {
             <CustomLink className="mx-4" href="/acerca-de" title="Acerca de" />
             <CustomLink className="mx-4" href="/proyectos" title="Proyectos" />
             <CustomLink className="mx-4" href="/articulos" title="Artículos" />
+            <CustomLink className="mx-4" href="/eventos" title="Eventos" />
           </div>
           <div className="flex justify-start w-1/2 ml-12">
             <div className="flex justify-between w-full">
               <div className="flex items-center">
-              <CustomLink className="mx-4" href="/eventos" title="Eventos" />
               <Link href={"https://blog.aragua.org"} className={`mx-4 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
               {"Blog"}
                 <span
@@ -102,6 +102,20 @@ const Navbar = () => {
                   &nbsp;
                 </span>
               </Link>
+              
+              <Link href={"https://certificados.aragua.org"} className={`ml-4 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+              {"Certificados"}
+                <span
+                  className={`
+                        inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                        group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                        w-0 xl:bg-light xl:dark:bg-dark
+                        `}
+                >
+                  &nbsp;
+                </span>
+              </Link>
+
               <Link href={"https://faucet.aragua.org"} className={`ml-4 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
               {"Faucet"}
                 <span
@@ -173,7 +187,7 @@ const Navbar = () => {
 
       <motion.div className="min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2
       -translate-y-1/2
-      py-32 bg-dark/90 dark:bg-light/75 rounded-lg z-50 backdrop-blur-md
+      py-24 bg-dark/90 dark:bg-light/75 rounded-lg z-50 backdrop-blur-md
       "
       initial={{scale:0,x:"-50%",y:"-50%", opacity:0}}
       animate={{scale:1,opacity:1}}
@@ -186,6 +200,18 @@ const Navbar = () => {
         <CustomMobileLink toggle={handleClick} className="xl:m-0 xl:my-2" href="/eventos" title="Eventos" />
         <a href="https://blog.aragua.org/" className="relative rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
           Blog
+          <span
+            className={`
+                  inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                  group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                  w-0 xl:bg-light xl:dark:bg-dark
+                  `}
+          >
+            &nbsp;
+          </span>
+        </a>
+        <a href="https://certificados.aragua.org/" className="relative rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
+          Certificados
           <span
             className={`
                   inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 

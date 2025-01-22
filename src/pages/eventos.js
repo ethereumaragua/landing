@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import poster from "../../public/images/events/Poster.png";
 
-
+import scaffoldstark from "../../public/images/events/scaffoldstark.png";
 // import blog1 from "../../public/images/articles/pagination component in reactjs.jpg";
 // import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
 // import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
@@ -19,6 +19,7 @@ import Layout from "@/components/Layout";
 import Link from "next/link";
 import { useRef } from "react";
 import TransitionEffect from "@/components/TransitionEffect";
+import { FeaturedProject } from "./proyectos";
 
 const FramerImage = motion(Image);
 
@@ -140,6 +141,19 @@ export default function Events() {
           />
 
           <center className="w-full">
+
+            <div className="grid grid-cols-12 mb-12">
+              <div className="col-span-12 text-left">
+                <FeaturedProject
+                  type="Aprendizaje, Desarrollo"
+                  title="Basecamp ScaffoldStark"
+                  summary="Basecamp Totalmente Gratuito de ScaffoldStark para aprender a construir dApps en Starknet. El programa combina clases online con un workshop presencial en 5 países de habla hispana, en Venezuela será el 11 de febrero. Regístrate en el botón de abajo para ver la dirección del evento!"
+                  img={scaffoldstark}
+                  link="https://lu.ma/1fgqbz4a"
+                  github="https://github.com/Scaffold-Stark/scaffold-stark-2"
+                />
+              </div>
+            </div>
 
           <Image
             className="relative w-full h-auto mb-12 rounded-lg"
