@@ -147,7 +147,7 @@ export default function Events() {
                 <FeaturedProject
                   type="Aprendizaje, Desarrollo"
                   title="Basecamp ScaffoldStark"
-                  summary="Basecamp Totalmente Gratuito de ScaffoldStark para aprender a construir dApps en Starknet. El programa combina clases online con un workshop presencial en 5 países de habla hispana, en Venezuela será el 11 de febrero. Regístrate en el botón de abajo para ver la dirección del evento!"
+                  summary="Basecamp Totalmente Gratuito de ScaffoldStark para aprender a construir dApps en Starknet. El programa combina clases online con un workshop presencial en 5 países de habla hispana. Sesiones virtuales: 27, 29 de enero y 3 de febrero. Sesión presencial en la UPT Aragua, el martes 11 de febrero. Regístrate en el botón de abajo!"
                   img={scaffoldstark}
                   link="https://lu.ma/1fgqbz4a"
                   github="https://github.com/Scaffold-Stark/scaffold-stark-2"
