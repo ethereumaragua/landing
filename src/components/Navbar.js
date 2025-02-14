@@ -62,7 +62,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="relative z-10 flex items-center justify-between w-full px-32 py-8 text-sm font-medium dark:text-light xl:px-16 z-1 md:px-12 sm:px-8 ">
+    <header className="relative z-10 flex items-center justify-between w-full px-32 py-8 font-medium text-md dark:text-light xl:px-16 z-1 md:px-12 sm:px-8 ">
       
       <button
         type="button"
@@ -81,16 +81,16 @@ const Navbar = () => {
       >
         <nav className="flex items-center justify-center w-full">
           <div className="flex justify-end w-1/2 mr-12">
-            <CustomLink className="mr-4" href="/" title="Inicio" />
-            <CustomLink className="mx-4" href="/acerca-de" title="Acerca de" />
-            <CustomLink className="mx-4" href="/proyectos" title="Proyectos" />
-            <CustomLink className="mx-4" href="/articulos" title="Artículos" />
-            <CustomLink className="mx-4" href="/eventos" title="Eventos" />
+            <CustomLink className="mr-5" href="/" title="Inicio" />
+            <CustomLink className="mr-5" href="/acerca-de" title="Acerca de" />
+            <CustomLink className="mr-5" href="/proyectos" title="Proyectos" />
+            <CustomLink className="mr-5" href="/articulos" title="Artículos" />
+            <CustomLink className="" href="/eventos" title="Eventos" />
           </div>
           <div className="flex justify-start w-1/2 ml-12">
             <div className="flex justify-between w-full">
               <div className="flex items-center">
-              <Link href={"https://blog.aragua.org"} className={`mx-4 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+              <Link href={"https://blog.aragua.org"} className={` rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
               {"Blog"}
                 <span
                   className={`
@@ -102,8 +102,21 @@ const Navbar = () => {
                   &nbsp;
                 </span>
               </Link>
+
+              <Link href={"https://aula.aragua.org"} className={`ml-5 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+              {"Aula"}
+                <span
+                  className={`
+                        inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                        group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                        w-0 xl:bg-light xl:dark:bg-dark
+                        `}
+                >
+                  &nbsp;
+                </span>
+              </Link>
               
-              <Link href={"https://certificados.aragua.org"} className={`ml-4 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+              <Link href={"https://certificados.aragua.org"} className={`ml-5 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
               {"Certificados"}
                 <span
                   className={`
@@ -116,7 +129,7 @@ const Navbar = () => {
                 </span>
               </Link>
 
-              <Link href={"https://faucet.aragua.org"} className={`ml-4 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
+              <Link href={"https://faucet.aragua.org"} className={`ml-5 rounded relative group xl:text-light xl:dark:text-dark`} target="_blank">
               {"Faucet"}
                 <span
                   className={`
@@ -200,6 +213,18 @@ const Navbar = () => {
         <CustomMobileLink toggle={handleClick} className="xl:m-0 xl:my-2" href="/eventos" title="Eventos" />
         <a href="https://blog.aragua.org/" className="relative rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
           Blog
+          <span
+            className={`
+                  inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+                  group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                  w-0 xl:bg-light xl:dark:bg-dark
+                  `}
+          >
+            &nbsp;
+          </span>
+        </a>
+        <a href="https://aula.aragua.org/" className="relative rounded xl:m-0 xl:my-2 group xl:text-light xl:dark:text-dark" target="_blank">
+          Aula Virtual
           <span
             className={`
                   inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
