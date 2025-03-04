@@ -142,19 +142,6 @@ export default function Events() {
 
           <center className="w-full">
 
-            <div className="grid grid-cols-12 mb-12">
-              <div className="col-span-12 text-left">
-                <FeaturedProject
-                  type="Aprendizaje, Desarrollo"
-                  title="Basecamp ScaffoldStark"
-                  summary="Basecamp Totalmente Gratuito de ScaffoldStark para aprender a construir dApps en Starknet. El programa combina clases online con un workshop presencial en 5 países de habla hispana. Sesiones virtuales: 27, 29 de enero y 3 de febrero a las 6pm. Sesión presencial en la UPT Aragua, el martes 11 de febrero. Regístrate en el botón de abajo!"
-                  img={scaffoldstark}
-                  link="https://lu.ma/1fgqbz4a"
-                  github="https://github.com/Scaffold-Stark/scaffold-stark-2"
-                />
-              </div>
-            </div>
-
           <Image
             className="relative w-full h-auto mb-12 rounded-lg"
             src={poster}
@@ -235,6 +222,28 @@ export default function Events() {
               link="https://aragua.org/blogs/higher-order-component-hoc-react"
             />
           </ul> */}
+
+<AnimatedText
+            text="Eventos Anteriores"
+            className="!text-8xl !leading-tight my-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:my-8"
+          />
+
+          <center className="w-full">
+
+            <div className="grid grid-cols-12 mb-12">
+              <div className="col-span-12 text-left">
+                <FeaturedProject
+                  type="Aprendizaje, Desarrollo"
+                  title="Basecamp ScaffoldStark"
+                  summary="Basecamp Totalmente Gratuito de ScaffoldStark para aprender a construir dApps en Starknet. El programa combina clases online con un workshop presencial en 5 países de habla hispana. Sesiones virtuales: 27, 29 de enero y 3 de febrero a las 6pm. Sesión presencial en la UPT Aragua, el martes 11 de febrero. Regístrate en el botón de abajo!"
+                  img={scaffoldstark}
+                  link="https://lu.ma/1fgqbz4a"
+                  github="https://github.com/Scaffold-Stark/scaffold-stark-2"
+                />
+              </div>
+            </div>
+
+          </center>
         </Layout>
       </main>
     </>
