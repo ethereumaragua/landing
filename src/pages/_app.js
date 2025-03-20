@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const insights = [
     "🌟🚀", " ", " "," "," ",
-    "Te Invitamos a Nuestro Próximo Evento, este 25 de Marzo, desde las 9:00 de la mañana en la UPT Aragua",
+    "Te Invitamos a Nuestro Próximo Evento, este 8 de Abril, desde las 9:00 de la mañana en la UPT Aragua",
     "Únete a nuestro Seminario Blockchain 2025 | 1er Capítulo | Onboarding",
     "Empieza tu Recorrido en la web3 ¡No te lo pierdas!",
     " ", " "," "," ", "🌟🚀",
